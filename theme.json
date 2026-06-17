@@ -1,14 +1,12 @@
 {
-  "id": "5d1edf98-c7b9-4c0d-bdbc-ed6a7b6e200c",
+  "id": "03e59bcd-817b-4f75-8a29-8af14d8bbb9a",
   "name": "Better Essentials Visibility",
-  "description": "Declutter your right click menu, hide options you don't need",
-  "homepage": "",
-  "style": "/home/breno/Projects/Dev/pessoais/betteressentialsvisibility/chrome.css",
-  "readme": "",
-  "image": "",
+  "description": "Improve the visibilityof essential items.",
+  "homepage": "https://github.com/BrenoPT/better-visibility-essentials/tree/main",
+  "style": "https://github.com/BrenoPT/better-visibility-essentials/blob/main/chrome.css",
+  "readme": "https://github.com/BrenoPT/better-visibility-essentials/blob/main/README.md",
+  "preferences": "/home/breno/Projects/Dev/pessoais/betteressentialsvisibility/preferences.json",
   "author": "Breno",
   "version": "1.0",
-  "preferences": "/home/breno/Projects/Dev/pessoais/betteressentialsvisibility/preferences.json",
-  "createdAt": "",
-  "updatedAt": ""
+  "createdAt": "17-06-2026"
 }
