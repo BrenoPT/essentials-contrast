@@ -1,0 +1,36 @@
+/* Essentials Visibility Fix - Zen Browser Mod */
+
+:root {
+    /* Variáveis calculadas com base no preferences.json (com fallbacks de segurança) */
+    --mod-essential-bg-opacity: calc(var(--mod-essentials_visibility-bg_opacity, 25) * 0.01);
+    --mod-essential-shadow-size: calc(var(--mod-essentials_visibility-shadow_size, 2) * 1px);
+    --mod-essential-shadow-color: var(--mod-essentials_visibility-shadow_color, rgba(235, 219, 178, 0.7));
+}
+
+/* 1. Melhorar o contraste do fundo das abas essenciais */
+@media (-moz-pref("mod.essentials_visibility.enhance_bg")) {
+    /* Seleciona o fundo das abas marcadas como essenciais */
+    .tabbrowser-tab[zen-essential="true"] .tab-background,
+    #zen-essentials-container .tabbrowser-tab .tab-background {
+        /* 'currentColor' herda a cor do texto da UI atual, garantindo que seja 
+           sempre legível (claro no modo escuro, escuro no modo claro) */
+        background-color: currentColor !important;
+        opacity: var(--mod-essential-bg-opacity) !important;
+    }
+    
+    /* Mantém um destaque sutil quando o mouse passa por cima (hover) */
+    .tabbrowser-tab[zen-essential="true"]:hover .tab-background,
+    #zen-essentials-container .tabbrowser-tab:hover .tab-background {
+        opacity: calc(var(--mod-essential-bg-opacity) + 0.15) !important;
+    }
+}
+
+/* 2. Adicionar contorno (drop-shadow) aos ícones para destacá-los */
+@media (-moz-pref("mod.essentials_visibility.enhance_icon")) {
+    .tabbrowser-tab[zen-essential="true"] .tab-icon-image,
+    #zen-essentials-container .tabbrowser-tab .tab-icon-image {
+        /* O drop-shadow é a melhor opção pois cria o contorno 
+           baseado na transparência (formato) real do logo SVG/PNG */
+        filter: drop-shadow(0px 0px var(--mod-essential-shadow-size) var(--mod-essential-shadow-color)) !important;
+    }
+}
