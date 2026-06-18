@@ -1,12 +1,12 @@
 [
   {
-    "property": "mod.ghost_tabs.icon_shadow_enabled",
+    "property": "mod.essentials_constrast.icon_shadow",
     "label": "Enable Shadows Under Essential Icons",
     "type": "checkbox",
     "defaultValue": true
   },
   {
-    "property": "mod.ghost_tabs.background_glow_enabled",
+    "property": "mod.essentials_constrast.background_glow",
     "label": "Enable Colored Glow For Active Essential Tab",
     "type": "checkbox",
     "defaultValue": true

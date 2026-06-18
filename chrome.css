@@ -1,8 +1,8 @@
-/* Zen Essentials Contrast v1.0 */
+/* Essentials Contrast v1.0 */
 /* <brenotarga@proton.me> */
 
 /* controls the drop shadow from the icons from non-active tabs */
-@media (-moz-pref("mod.ghost_tabs.icon_shadow_enabled")) {
+@media (-moz-pref("mod.essentials_constrast.icon_shadow")) {
   .tabbrowser-tab[zen-essential="true"]:not([selected]) .tab-icon-image {
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3)) !important;
   }
@@ -18,7 +18,7 @@
 }
 
 /* controls the background colored glow */
-@media (-moz-pref("mod.ghost_tabs.background_glow_enabled")) {
+@media (-moz-pref("mod.essentials_constrast.background_glow")) {
   #zen-essentials .tabbrowser-tab[selected] .tab-background::before {
     opacity: 0.1 !important;
     filter: blur(20px) saturate(2) brightness(1) !important;
