@@ -1,35 +1,40 @@
 [
-    {
-        "property": "mod.essentials_visibility.enhance_bg",
-        "label": "Melhorar contraste do fundo",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "mod.essentials_visibility.bg_opacity",
-        "label": "Opacidade do Fundo (0-100)",
-        "type": "string",
-        "defaultValue": "25",
-        "placeholder": "Ex: 25"
-    },
-    {
-        "property": "mod.essentials_visibility.enhance_icon",
-        "label": "Adicionar contorno/brilho aos ícones",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "mod.essentials_visibility.shadow_size",
-        "label": "Tamanho do Contorno (px)",
-        "type": "string",
-        "defaultValue": "2",
-        "placeholder": "Ex: 2"
-    },
-    {
-        "property": "mod.essentials_visibility.shadow_color",
-        "label": "Cor do Contorno (Nome, Hex ou RGBA)",
-        "type": "string",
-        "defaultValue": "rgba(235, 219, 178, 0.7)",
-        "placeholder": "Ex: #ebdbb2 ou rgba(235,219,178,0.7)"
-    }
+  {
+    "property": "uc.essentials.restoreopacity",
+    "label": "Restore full opacity/color for essential icons (counters ghost/inactive tab mods) — enable this first",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "uc.essentials.enhancebg",
+    "label": "Increase contrast of essential slot backgrounds",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "uc.essentials.slotborder",
+    "label": "Add subtle border/outline around each essential slot",
+    "type": "checkbox"
+  },
+  {
+    "property": "uc.essentials.iconshadow",
+    "label": "Add drop-shadow to essential icons (good for most themes)",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "uc.essentials.iconshadowstrong",
+    "label": "Add STRONGER drop-shadow (for very light/pastel workspaces — disable 'iconshadow' first)",
+    "type": "checkbox"
+  },
+  {
+    "property": "uc.essentials.boostbrightness",
+    "label": "Boost icon brightness for dark/saturated workspaces",
+    "type": "checkbox"
+  },
+  {
+    "property": "uc.essentials.iconhalo",
+    "label": "Add a soft radial halo behind each essential icon",
+    "type": "checkbox"
+  }
 ]
